@@ -1,6 +1,6 @@
 # Grab AI For SEA Safety Challenge
 
-Skip to [Step to execute hold-out Dataset](#step-to-predict-hold-out-dataset)
+Skip to [Step to predict hold-out Dataset](#step-to-predict-hold-out-dataset)
 
 # Introduction
 In this reposity I consider myself exploring method of binary classifying telematics data into safe and unsafe category. The safety behavior were manually labelled by trip's passengers hence part of the data could have been said to have bias towards multipe reasons that probably unexist in the dataset such as car model, gender, time of the trip, road condition, weather and etc.
@@ -22,10 +22,13 @@ The selection of XGboost were inspired by the Uber documentation where this way 
 # Exploring and Visualization
 The part I always enjoyed is exploring and finding insight in the data. Sometimes I wandered too long and spend too much on this part until too little time left on modelling. Yet this part should be iterative where after modelling we should perform post mortem to look for ways to improve the performance futher. The notebook involved here are as listed below:
 
-* exploration.ipynb
+* [exploration.ipynb](exploration.ipynb)
 
 ## PCA
 Just last minute I performed PCA on the preprocessed with **Preprocess-hold-out Dataset.ipynb** looks like 2 PCA components preserved 66% of information and from the plot the safe and unsafe point can be seen as separateable.
+
+I include the notebook that produced the PCA but no time to run another model from this data [Xgboost raw data post-mortem analysis.ipynb](Xgboost%20raw%20data%20post-mortem%20analysis.ipynb)
+
 <img src="/PCA.png" width="500" />
 
 
