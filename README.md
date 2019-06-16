@@ -1,11 +1,11 @@
 # Grab AI For SEA Safety Challenge
 
-TL;DR skip to [Step to execute hold-on Dataset](#step-to-execute-hold-on-dataset)
+Skip to [Step to execute hold-on Dataset](#step-to-execute-hold-on-dataset)
 
 # Introduction
 In this reposity I consider myself exploring method of binary classifying driving behavior into safe and unsafe. The safety behavior were manually labelled by trip's passengers hence part of the data could have been said to have bias towards multipe reasons that probably unexist in the dataset such as car model, gender, time of the trip, road condition, weather and etc.
 
-To get understanding of the telematic data, I've had voluntarily recorded my own driving data and part of the analysis and the dataset is released publicly on [Kaggle](_).
+To get understanding of the telematic data, I've had voluntarily recorded my own driving data and part of the analysis and the dataset is released publicly on [Kaggle](https://www.kaggle.com/mahadir/phone-telematics-exploratory).
 
 Also couple of literatures were reviewed related to telematics and driving behavior to get rough idea on how this type of problem is tackled, primarily I found article and video from Uber is aspiring, [here](https://eng.uber.com/telematics/) and [here](https://www.youtube.com/watch?v=_s8ZPVNKsGk).
 
@@ -27,14 +27,23 @@ The part I always enjoyed is exploring and finding insight in the data. Sometime
 
 # Step to execute hold-on Dataset
 
-## 
-* It's assumed that the structure of the hold-on dataset have similar structure as the provided dataset.
+## Hold-on Dataset
+It's assumed that the structure of the hold-on dataset is similar to the provided dataset where features and label is separated with different directory with partitioned CSV files. The content of both labels and features also is assumed to contain similar structures.
+```
+safety/features/part-PARTITION_NUM-GUID.csv
+safety/labels/part-PARTITION_NUM-GUID.csv
+```
 
-## Machine Requirements:
+## Hardware Requirements:
 Depending on the size of the dataset, but my environment on training the data without much worrying about the kernel restarted due to limited I've chosen Google Cloud Platform with this type of machine n1-highmem-8 (8 vCPUs, 52 GB memory) on their datalab service. I also attached single GPU NVIDIA Tesla K80 to get boost on computing and save time.
 
 To create the same environment instance the command as such:
-`datalab beta create-gpu grabaiforsea --machine-type n1-highmem-8 --accelerator-count 1`
+```
+$ datalab beta create-gpu grabaiforsea --machine-type n1-highmem-8 --accelerator-count 1
+```
+
+## Software requirements:
+The codes were developed using Python 3.5.6 (Anaconda). Due to the nature of using Jupyter notebook from datalab most of the computing libraries is already installed. However, in the preprocess 
 
 
 # TODO
