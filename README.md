@@ -24,6 +24,10 @@ The part I always enjoyed is exploring and finding insight in the data. Sometime
 
 * exploration.ipynb
 
+## PCA
+Just last minute I performed PCA on the preprocessed with **Preprocess-hold-out Dataset.ipynb** looks like 2 PCA components preserved 66% of information and from the plot the safe and unsafe point can be seen as separateable.
+<img src="/PCA.png" width="500" />
+
 
 # Step to predict hold-out Dataset
 
