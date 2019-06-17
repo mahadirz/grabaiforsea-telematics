@@ -25,7 +25,7 @@ The part I always enjoyed is exploring and finding insight in the data. Sometime
 * [exploration.ipynb](exploration.ipynb)
 
 ## PCA
-Just last minute I performed PCA on the preprocessed with **Preprocess-hold-out Dataset.ipynb** looks like 2 PCA components preserved 66% of information and from the plot the safe and unsafe point can be seen as separateable.
+Just last minute I performed PCA on the preprocessed with **Preprocess-hold-out Dataset.ipynb** looks like 2 PCA components preserved 66% of information and from the plot t̶h̶e̶ ̶s̶a̶f̶e̶ ̶a̶n̶d̶ ̶u̶n̶s̶a̶f̶e̶ ̶c̶a̶n̶ ̶b̶e̶ ̶s̶e̶p̶a̶r̶a̶t̶e̶d̶ ̶b̶y̶ ̶b̶o̶u̶n̶d̶a̶r̶y̶. Edit: The '0' overlapped the '1'
 
 I include the notebook that produced the PCA but no time to run another model from this data [Xgboost raw data post-mortem analysis.ipynb](Xgboost%20raw%20data%20post-mortem%20analysis.ipynb)
 
