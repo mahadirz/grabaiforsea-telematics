@@ -29,7 +29,27 @@ Just last minute I performed PCA on the preprocessed with **Preprocess-hold-out 
 
 I include the notebook that produced the PCA but no time to run another model from this data [Xgboost raw data post-mortem analysis.ipynb](Xgboost%20raw%20data%20post-mortem%20analysis.ipynb)
 
-<img src="/PCA.png" width="500" />
+<img src="/images/PCA.png" width="500" />
+
+## Speed 
+<img src="/images/safe-speed.png" width="500" />
+<img src="/images/unsafe-speed.png" width="500" />
+
+## Acceleration from speed
+<img src="/images/safe-speed-acc.png" width="500" />
+<img src="/images/unsafe-speed-acc.png" width="500" />
+
+##  Gyro
+<img src="/images/safe-gyro.png" width="500" />
+<img src="/images/unsafe-gyro.png" width="500" />
+
+## Accelerometer
+<img src="/images/safe-acceleration.png" width="500" />
+<img src="/images/unsafe-acceleration.png" width="500" />
+
+## Bearing
+<img src="/images/safe-bearing.png" width="500" />
+<img src="/images/unsafe-bearing.png" width="500" />
 
 
 # Step to predict hold-out Dataset
